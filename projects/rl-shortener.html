@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+  <h1>🔗 URL Shortener</h1>
+  <input type="text" id="urlInput" placeholder="Enter URL">
+  <button onclick="shortenUrl()">Shorten</button>
+  <p id="shortUrl"></p>
+
+  <script>
+    function shortenUrl() {
+      const url = document.getElementById("urlInput").value;
+      if (!url) {
+        document.getElementById("shortUrl").innerText = "Please enter a valid URL.";
+        return;
+      }
+      // Simple fake shortener (demo only)
+      const short = "short.ly/" + Math.random().toString(36).substring(7);
+      document.getElementById("shortUrl").innerText = `Shortened URL: ${short}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amarnath | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <div class="logo">Amarnath<span>.</span></div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="mode-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Amarnath</span></h1>
+        <p>Aspiring <strong>Data Scientist</strong> & <strong>Web Developer</strong></p>
+
+        <div class="actions">
+          <a href="#projects" class="btn primary">🚀 See My Work</a>
+          <a href="resume.pdf" class="btn secondary" download>📄 Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="profile.jpg" alt="Amarnath Vankayalapati"
+             onerror="this.closest('.hero-img').style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm <b>Amarnath Vankayalapati</b>, passionate about <b>Data Science</b>,
+        <b>AI</b>, and <b>Web Development</b>.  
+        To establish a career as an engineer in a dynamic and progressive organization where my skills can contribute to
+the company’s goals and achievements, as well as my own personal and professional growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🎨 Image Editor</h3>
+          <p>Real-time drawing, filters, and export with HTML5 Canvas.</p>
+          <a href="projects/image-editor.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>📊 Breast Cancer Detection</h3>
+          <p>ML model for early detection of breast cancer using medical imaging.</p>
+          <a href="projects/breast-cancer.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>🌤 Weather App</h3>
+          <p>Real-time weather updates using OpenWeather API.</p>
+          <a href="projects/weather.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>🔐 Password Generator</h3>
+          <p>Create strong passwords for secure authentication.</p>
+          <a href="projects/password-generator.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>✅ To-Do List</h3>
+          <p>Boost productivity with task scheduling.</p>
+          <a href="projects/todo.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>🔗 URL Shortener</h3>
+          <p>Generate short, shareable URLs easily.</p>
+          <a href="projects/url-shortener.html" class="btn small">View</a>
+        </div>
+        <div class="card">
+          <h3>🔗 LIVE-CODE-EDITOR</h3>
+          <p>Generate short, shareable URLs easily.</p>
+          <a href="projects/code-editor.html" class="btn small">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Amarnath Vankayalapati. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

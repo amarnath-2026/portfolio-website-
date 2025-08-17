@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breast Cancer Detection</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+  <h1>📊 Breast Cancer Detection</h1>
+  <p>Upload medical data to predict cancer presence (Demo simulation).</p>
+  <input type="file" id="fileInput">
+  <button onclick="predict()">Predict</button>
+  <p id="result"></p>
+
+  <script>
+    function predict() {
+      const file = document.getElementById("fileInput").files[0];
+      if (!file) {
+        document.getElementById("result").innerText = "Please upload a file first.";
+        return;
+      }
+      // Placeholder: real ML model would be on backend
+      document.getElementById("result").innerText = "Prediction: Negative (Demo)";
+    }
+  </script>
+</body>
+</html>
